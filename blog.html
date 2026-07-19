@@ -121,21 +121,14 @@
 
         .blog-image {
             width: 100%;
+            height: 0;
             padding-bottom: 100%;
             background: linear-gradient(135deg, #1a3a52 0%, #2d5a7a 100%);
             position: relative;
             overflow: hidden;
             background-size: cover;
             background-position: center;
-        }
-
-        .blog-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            background-repeat: no-repeat;
         }
 
         .blog-image::before {
