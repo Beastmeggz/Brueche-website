@@ -631,7 +631,19 @@
                 background: linear-gradient(135deg, rgba(26, 58, 82, 0.3) 0%, rgba(45, 90, 122, 0.3) 100%), url('mobile-hero.png') center -25px/cover no-repeat;
                 background-clip: padding-box, padding-box;
                 background-origin: padding-box, padding-box;
-                overflow: hidden;
+                overflow: visible;
+                position: relative;
+            }
+
+            .hero::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -24px;
+                left: 0;
+                right: 0;
+                height: 24px;
+                background: linear-gradient(135deg, rgba(26, 58, 82, 0.3) 0%, rgba(45, 90, 122, 0.3) 100%);
             }
 
             .hero h1 {
